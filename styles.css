@@ -1,0 +1,48 @@
+table {
+    border: 1px solid #BDBDBD;
+    border-collapse: collapse;
+    background: #F2F2F2;
+    width: 100%;
+}
+
+td {
+    border: 1px solid #BDBDBD;
+    border-collapse: collapse;
+    background: #F2F2F2;
+    padding: 15px;
+
+}
+
+th {
+    border: 1px solid #BDBDBD;
+    background: #D8D8D8;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 15px;
+}
+
+
+#heading {
+    background: #8181F7;
+    width: 100%;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    font-size: 300%;
+}
+#modelInfo {
+    background: #58D3F7;
+}
+#operationPanel {
+    background: #81F7D8;
+    max-width: 251px;
+    padding: 5px
+}
+#render {
+    width: 60%;
+    height: 600px;
+
+}
+.flex-container {
+    display: flex;
+}

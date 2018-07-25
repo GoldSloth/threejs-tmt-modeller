@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title id="Title">Model Viewer</title>
+        <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+        <style> body {padding: 0; margin: 0;} </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three-orbitcontrols@2.1.2/OrbitControls.js"></script>
+        <script src="drawShapebox.js"></script>
+        <script src="drawMarker.js"></script>
+        <script src="MessyParcer.js"></script>
+        <script src="drawEdges.js"></script>
+        <script src="sketch.js"></script>
+        
+    </head>
+    
+    <body>
+        
+        <div id="heading">Sloth's Online Model Viewer</div>
+        <div class="flex-container" id="content">
+            <div>
+                <div id="modelInfo">
+                    <table id="ModelDetails">
+                        <tr>
+                            <th>Model Name</th>
+                            <td id="modelName">~</td>
+                        </tr>
+                        <tr>
+                            <th>Model Author</th>
+                            <td id="modelAuthor">~</td>
+                        </tr>
+                        <tr>
+                            <th>Texture Size X</th>
+                            <td id="modelTextureX">~</td>
+                        </tr>
+                        <tr>
+                            <th>Texture Size Y</th>
+                            <td id="modelTextureY">~</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="operationPanel">
+                    <input type='file' id='file' onchange="main()"/>
+                </div>
+            </div>
+            <div id="render"></div>
+        </div>
+        
+    </body>
+</html>
